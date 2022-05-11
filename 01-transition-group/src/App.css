@@ -1,0 +1,44 @@
+.App {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100vw;
+}
+
+.bar {
+  height: 3rem;
+  width: 100%;
+}
+
+.bar > div {
+  background-color: var(--colour-start);
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 3rem;
+  padding-left: 0.5rem;
+  transition-property: width, background-color;
+  transition-timing-function: linear;
+  width: 1%;
+}
+
+.progress-exit-active > div,
+.progress-enter-active > div {
+  background-color: var(--colour-in-progress);
+}
+
+.progress-enter-active > div,
+.progress-enter-done > div {
+  width: 100%;
+}
+
+.progress-enter-done > div {
+  background-color: var(--colour-end);
+}
+
+.progress-exit-active > div,
+.progress-exit-done > div {
+  width: 2%;
+}
+
+.progress-exit-done > div {
+  background-color: var(--colour-start);
+}
