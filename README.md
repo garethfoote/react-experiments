@@ -1,2 +1,2 @@
-# react-experiments
-A monorepo for creating simple React experiments, examples of common problems and patterns. Potentially for treaching.  
+# React Experiments - Learning and Teaching
+A repo for React experiments, examples of common problems and patterns. Potentially for teaching.  
